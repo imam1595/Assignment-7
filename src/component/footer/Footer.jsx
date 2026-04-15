@@ -4,8 +4,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <div className='bg-[#244D3F] min-h-[40vh]'>
-            <div className='container mx-auto text-white space-y-4 text-center flex flex-col p-10'>
+        <div className='bg-accent min-h-[40vh] mt-10'>
+            <div className='container mx-auto space-y-4 text-center flex flex-col p-10'>
                 <div className='space-y-7'>
 
                     <h1 className='text-3xl font-bold md:text-4xl lg:text-5xl'>KeenKeeper</h1>
