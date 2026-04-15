@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Marcus Webb",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "marcus.webb@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Roommate from sophomore year. We bonded over late-night coding sessions and terrible dining hall food. Now he's a software engineer in Austin.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Priya Nair",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "priya.nair@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My first manager at the startup. She pushed me to take on bigger projects and believe in myself. We do a monthly virtual coffee catch-up.",
+    "goal": 30,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 3,
+    "name": "Daniel Osei",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "d.osei@yahoo.com",
+    "days_since_contact": 27,
+    "status": "almost due",
+    "tags": ["childhood", "close friend"],
+    "bio": "Grew up on the same street. We've seen each other through everything — first heartbreaks, graduations, career pivots. Lives in London now.",
+    "goal": 30,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Sofia Reyes",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "sofia.reyes@icloud.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["travel", "college"],
+    "bio": "Met backpacking through Southeast Asia. We accidentally booked the same hostel in Chiang Mai and have been inseparable ever since.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 5,
+    "name": "James Thornton",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "james.thornton@protonmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["family friend", "neighbor"],
+    "bio": "Our families have been close for decades. He taught me to play chess when I was 10. Retired now and living in Vermont.",
+    "goal": 30,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 6,
+    "name": "Aisha Kamara",
+    "picture": "https://randomuser.me/api/portraits/women/26.jpg",
+    "email": "aisha.kamara@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["work", "close friend"],
+    "bio": "We joined the same company on the same day and went through onboarding together. Now she's my go-to person for honest career advice.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 7,
+    "name": "Ryan Kowalski",
+    "picture": "https://randomuser.me/api/portraits/men/58.jpg",
+    "email": "ryan.kowalski@hotmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["gym", "college"],
+    "bio": "Training partner for three marathons. We've run over 1,000 miles together. He's the only person who can talk me into a 6am run.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 8,
+    "name": "Yuki Tanaka",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "yuki.tanaka@gmail.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["study abroad", "close friend"],
+    "bio": "My host family's daughter when I studied in Kyoto. She visited me twice abroad and we exchange care packages every few months.",
+    "goal": 30,
+    "next_due_date": "2026-03-15"
+  },
+  {
+    "id": 9,
+    "name": "Carlos Mendoza",
+    "picture": "https://randomuser.me/api/portraits/men/46.jpg",
+    "email": "carlos.m@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["entrepreneur", "close friend"],
+    "bio": "We co-founded a small side project together that never took off, but the friendship did. Now we swap startup ideas over weekly calls.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 10,
+    "name": "Fatima Al-Hassan",
+    "picture": "https://randomuser.me/api/portraits/women/90.jpg",
+    "email": "fatima.alhassan@outlook.com",
+    "days_since_contact": 22,
+    "status": "almost due",
+    "tags": ["book club", "neighbor"],
+    "bio": "We met at a neighborhood book club and discovered we have almost identical taste in fiction. She recommends the best reads and makes incredible tea.",
+    "goal": 21,
+    "next_due_date": "2026-04-20"
+  }
+]
