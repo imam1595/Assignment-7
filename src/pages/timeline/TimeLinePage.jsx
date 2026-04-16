@@ -2,8 +2,8 @@ import React from 'react';
 
 const TimeLinePage = () => {
     return (
-        <div>
-            Time line Page
+        <div className='container mx-auto'>
+            <h1 className='text-3xl font-bold'>Timeline</h1>
         </div>
     );
 };
