@@ -1,18 +1,46 @@
 import React from 'react';
 import useDatum from '../../hooks/useDatum';
 import Card from '../../ui/Card';
+import LoadingCard from '../../ui/LoadingCard';
 
 const DataPage = () => {
     const {datum, loading} = useDatum();
     console.log(datum, loading);
     return (
         <div>
-            data page {datum.length}
+            {/* data page {datum.length} */}
 
-            <div>some box</div>
-            <div>
+            
+
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 overflow-hidden'>
+
+                <div className='text-center shadow-xl p-10 font-bold'>
+                    <h5>10</h5>
+                    <span>Total Friends</span>
+                </div>
+
+                <div className='text-center shadow-xl p-10 font-bold'>
+                    <h5>4</h5>
+                    <span>On Track</span>
+                </div>
+
+                <div className='text-center shadow-xl p-10 font-bold'>
+                    <h5>6</h5>
+                    <span>Need Attention</span>
+                </div>
+
+                <div className='text-center shadow-xl p-10 font-bold'>
+                    <h5>12</h5>
+                    <span>Interactions This Month</span>
+                </div>
                 {
-                    datum.map((data) => <Card key={data.id} data={data} />)
+                    loading ?
+                        <LoadingCard /> :
+                        (
+                            
+                             datum.map((data) => <Card key={data.id} data={data} />)
+                
+                        )
                 }
             </div>
         </div>

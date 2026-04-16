@@ -13,7 +13,11 @@ const useDatum = () => {
             setTimeout(() => {
                 setDatum(data);
                 setLoading(false);
-            }, 40000);
+            }, 4000);
+
+
+            // setDatum(data);
+            // setLoading(false);
         };
         fetchData();
     }, [])
