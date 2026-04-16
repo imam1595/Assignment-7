@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 import { BsChatLeftText } from 'react-icons/bs';
 import { FaArchive } from 'react-icons/fa';
 import { GoDeviceCameraVideo } from 'react-icons/go';
 import { IoIosNotifications } from 'react-icons/io';
 import { RiDeleteBin7Line } from 'react-icons/ri';
+import { LogContext } from '../context/LogContext';
 
 const ProfileCard = ({expectedData}) => {
+
+    const {logs, setLogs} = useContext(LogContext);
+    // console.log(logs, typeof(logs));
+
+    // const ara = useContext(LogContext);
+    // console.log(ara);
+
+    const logsHandler = (type) => {
+        const newLog = {
+        id: Date.now(),
+        person: expectedData,
+        action: type, // 'call' | 'text' | 'video'
+        time: new Date().toISOString()
+    };
+
+    setLogs([...logs, newLog]);
+    }
+
+    // console.log(logs);
+
     return (
         <div className='md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-10 lg:10'>
 
@@ -97,18 +118,22 @@ const ProfileCard = ({expectedData}) => {
 
                     <h2 className='lg:text-start'>Quick Cheek-in</h2>
                     <div className='flex flex-col gap-10 md:flex-row lg:flex-row'>
-                        <button className='btn p-10'>
+                        
+                        <button className='btn p-10' onClick={() => logsHandler('Call')}>
                             <BiSolidPhoneCall />
                             <p>Call</p>
                         </button>
-                        <button className='btn p-10'>
+
+                        <button className='btn p-10' onClick={() => logsHandler('Text')}>
                             <BsChatLeftText />
                             <p>Text</p>
                         </button>
-                        <button className='btn p-10'>
+
+                        <button className='btn p-10' onClick={() => logsHandler('Video')}>
                             <GoDeviceCameraVideo />
                             <p>Video</p>
                         </button>
+
                     </div>
                 </div>
             </div>

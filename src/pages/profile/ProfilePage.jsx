@@ -12,11 +12,11 @@ const ProfilePage = () => {
     // console.log(datum, loading);
 
     const expectedData = datum.find(data => data.id == id);
-    console.log(expectedData);
+    // console.log(expectedData);
 
     return (
         <div className='container mx-auto'>
-            profile dynamic--{id}
+            
 
             {
                 loading ?
