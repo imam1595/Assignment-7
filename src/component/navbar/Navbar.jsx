@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         
         <div className='flex flex-col justify-center gap-5 items-center md:flex-row md:justify-between  lg:flex-row lg:justify-between shadow min-h-[10vh] p-5 mb-10'>
-            <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Keen<span>Keeper</span></h1>
+            <h1 className='text-2xl md:text-3xl lg:text-4xl'><span className='font-bold'>Keen</span>Keeper</h1>
             <div className='flex gap-8'>
                 <NavLink 
                     to='/'
