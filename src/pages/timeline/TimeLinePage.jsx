@@ -18,7 +18,7 @@ const TimeLinePage = () => {
         filterLogs = logs.filter((log) => log.action == sortingType)
     };
 
-    console.log(filterLogs);
+    // console.log(filterLogs);
 
     return (
         <div className='container mx-auto'>

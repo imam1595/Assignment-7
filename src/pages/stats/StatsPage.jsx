@@ -6,7 +6,7 @@ import { LogContext } from '../../context/LogContext';
 const StatsPage = () => {
 
     const {logs} = useContext(LogContext);
-    console.log(logs, typeof(logs));
+    // console.log(logs, typeof(logs));
 
     const callCount = logs.filter(log => log.action === 'Call').length;
     const textCount = logs.filter(log => log.action === 'Text').length;
