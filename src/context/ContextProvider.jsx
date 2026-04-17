@@ -4,7 +4,7 @@ import { LogContext } from './LogContext';
 const ContextProvider = ({children}) => {
 
     const [logs, setLogs] = useState([]);
-    console.log(logs);
+    // console.log(logs);
 
     const data = {
         logs,

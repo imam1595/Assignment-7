@@ -6,6 +6,7 @@ import { GoDeviceCameraVideo } from 'react-icons/go';
 import { IoIosNotifications } from 'react-icons/io';
 import { RiDeleteBin7Line } from 'react-icons/ri';
 import { LogContext } from '../context/LogContext';
+import { toast } from 'react-toastify';
 
 const ProfileCard = ({expectedData}) => {
 
@@ -16,14 +17,26 @@ const ProfileCard = ({expectedData}) => {
     // console.log(ara);
 
     const logsHandler = (type) => {
-        const newLog = {
-        id: Date.now(),
-        person: expectedData,
-        action: type, // 'call' | 'text' | 'video'
-        time: new Date().toISOString()
-    };
 
-    setLogs([...logs, newLog]);
+        const newLog = {
+            id: Date.now(),
+            person: expectedData,
+            action: type, 
+            time: new Date().toISOString()
+        };
+
+        setLogs([...logs, newLog]);
+
+        console.log(logs);
+        console.log(newLog);
+
+
+        // {`${log.action} with ${log.person.name}`}
+
+        toast("Wow so easy!");
+        toast.info(`${type} to ${newLog.person.name}`);
+        
+
     }
 
     // console.log(logs);

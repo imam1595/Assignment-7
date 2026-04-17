@@ -3,16 +3,16 @@ import callImg from '../assets/call.png';
 import textImg from '../assets/text.png';
 import videoImg from '../assets/video.png'
 
-const LogCard = ({log}) => {
+const LogCard = ({filterLog}) => {
     return (
-        <div key={log.id} className="flex items-center gap-3 shadow-xl p-10">
+        <div key={filterLog.id} className="flex items-center gap-3 shadow-xl p-10">
 
-            <img src={log.action === 'Call' ? callImg : log.action === 'Text' ? textImg : videoImg} alt={log.action} className='w-12 h-12 object-cover rounded-full' />
+            <img src={filterLog.action === 'Call' ? callImg : filterLog.action === 'Text' ? textImg : videoImg} alt={filterLog.action} className='w-12 h-12 object-cover rounded-full' />
 
             <div>
-                <h2 className="font-bold text-xl">{`${log.action} with ${log.person.name}`}</h2>
+                <h2 className="font-bold text-xl">{`${filterLog.action} with ${filterLog.person.name}`}</h2>
                 <p className="text-sm text-gray-500">
-                    {new Date(log.time).toLocaleString()}
+                    {new Date(filterLog.time).toLocaleString()}
                 </p>
             </div>
 
