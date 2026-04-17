@@ -5,13 +5,13 @@ const Card = ({data}) => {
     return (
         <Link to={`/profile/${data.id}`}>
             <div className="card bg-base-100 shadow-2xl items-center text-center p-10 h-100">
-                <figure>
+                <div className='w-40 object-cover'>
                     <img
                     src={data.picture}
                     alt="pic" 
-                    className='w-full h-50 object-cover'
+                    className='w-full h-full object-cover'
                     />
-                </figure>
+                </div>
                 <div className="card-body items-center">
                     <h2 className="card-title">{data.name}</h2>
 

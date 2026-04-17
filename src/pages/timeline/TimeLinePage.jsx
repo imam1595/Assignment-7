@@ -40,7 +40,7 @@ const TimeLinePage = () => {
             {
                 logs.length === 0 ?
                     (
-                        <div className='flex justify-center items-center'>
+                        <div className='flex justify-center items-center shadow-xl p-10'>
                             <h1 className='font-bold text-2xl'>No data found</h1>
                         </div>
                     )   :

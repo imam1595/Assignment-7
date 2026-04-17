@@ -31,9 +31,8 @@ const ProfileCard = ({expectedData}) => {
         console.log(newLog);
 
 
-        // {`${log.action} with ${log.person.name}`}
+        // toast("Wow so easy!");
 
-        toast("Wow so easy!");
         toast.info(`${type} to ${newLog.person.name}`);
         
 
@@ -42,19 +41,21 @@ const ProfileCard = ({expectedData}) => {
     // console.log(logs);
 
     return (
-        <div className='md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-10 lg:10'>
+        <div className='md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-10 lg:gap-10'>
 
             
             <div className='space-y-10 mb-10'>
+
+                {/* part-1 */}
                 {/* // imag card */}
-                <div className="card bg-base-100 shadow-2xl items-center text-center p-10 h-100">
-                    <figure>
+                <div className="card bg-base-100 shadow-2xl items-center text-center p-10">
+                    <div className='w-40 object-cover'>
                         <img
                         src={expectedData.picture}
                         alt="pic" 
-                        className='w-full h-50 object-cover'
+                        className='w-full h-full object-cover'
                         />
-                    </figure>
+                    </div>
                     <div className="card-body items-center">
                         <h2 className="card-title">{expectedData.name}</h2>
 
@@ -94,10 +95,14 @@ const ProfileCard = ({expectedData}) => {
 
             </div>
             
+            {/* end of part-1 */}
 
-            <div className='space-y-10 md:col-span-2 lg:col-span-2'>
 
-                <div className='space-y-8 font-bold text-xl flex flex-col items-center md:flex-row md:justify-between md:text-sm lg:flex-row lg:justify-between'>
+            {/* part-2 */}
+
+            <div className='space-y-18 md:col-span-2 lg:col-span-2'>
+
+                <div className='space-y-8 font-bold text-xl flex flex-col items-center md:items-start lg:items-start md:flex-row md:justify-between md:text-sm lg:flex-row lg:justify-between'>
 
                     <div className="card bg-base-100 shadow-2xl items-center text-center p-10 h-35 w-80 md:h-30 md:w-60">
                         <h3>{expectedData.days_since_contact}</h3>
@@ -116,33 +121,35 @@ const ProfileCard = ({expectedData}) => {
                     
                 </div>
 
-                <div className='card bg-base-100 shadow-2xl items-center text-center p-10 font-bold text-xl space-y-5'>
+                <div className='flex justify-between bg-base-100 shadow-2xl p-10 font-bold text-xl space-y-5 h-50'>
 
-                    <div className='flex justify-between items-center bg-accent'>
+                    <div className='flex flex-col justify-between'>
                         <h1>Relationship Goal</h1>
-                        <button className='btn'>Edit</button>
+                        <p>Connect every {expectedData.days_since_contact} days</p>
                     </div>
 
-                    <p>Connect every {expectedData.days_since_contact} days</p>
+                    <button className='btn'>Edit</button>
+                    
 
                 </div>
 
-                <div className='card bg-base-100 shadow-2xl items-center text-center p-10 font-bold text-xl space-y-5'>
+                <div className='card bg-base-100 shadow-2xl items-center text-center md:items-start md:text-start lg:items-start lg:text-start p-10 font-bold text-xl space-y-5'>
 
-                    <h2 className='lg:text-start'>Quick Cheek-in</h2>
+                    <h2 className=''>Quick Cheek-in</h2>
+
                     <div className='flex flex-col gap-10 md:flex-row lg:flex-row'>
                         
-                        <button className='btn p-10' onClick={() => logsHandler('Call')}>
+                        <button className='btn p-4 md:p-6 lg:p-10' onClick={() => logsHandler('Call')}>
                             <BiSolidPhoneCall />
                             <p>Call</p>
                         </button>
 
-                        <button className='btn p-10' onClick={() => logsHandler('Text')}>
+                        <button className='btn p-4 md:p-6 lg:p-10' onClick={() => logsHandler('Text')}>
                             <BsChatLeftText />
                             <p>Text</p>
                         </button>
 
-                        <button className='btn p-10' onClick={() => logsHandler('Video')}>
+                        <button className='btn p-4 md:p-6 lg:p-10' onClick={() => logsHandler('Video')}>
                             <GoDeviceCameraVideo />
                             <p>Video</p>
                         </button>

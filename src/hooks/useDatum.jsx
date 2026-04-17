@@ -10,14 +10,14 @@ const useDatum = () => {
             const data = await res.json();
             
 
-            setTimeout(() => {
-                setDatum(data);
-                setLoading(false);
-            }, 4000);
+            // setTimeout(() => {
+            //     setDatum(data);
+            //     setLoading(false);
+            // }, 4000);
 
 
-            // setDatum(data);
-            // setLoading(false);
+            setDatum(data);
+            setLoading(false);
         };
         fetchData();
     }, [])
