@@ -121,11 +121,11 @@ const ProfileCard = ({expectedData}) => {
                     
                 </div>
 
-                <div className='flex justify-between bg-base-100 shadow-2xl p-10 font-bold text-xl space-y-5 h-50'>
+                <div className='flex justify-between bg-base-100 shadow-2xl p-10  space-y-5 h-50'>
 
                     <div className='flex flex-col justify-between'>
-                        <h1>Relationship Goal</h1>
-                        <p>Connect every {expectedData.days_since_contact} days</p>
+                        <h1 className='font-bold text-xl'>Relationship Goal</h1>
+                        <p>Connect every  <span className='font-bold text-xl'> {expectedData.days_since_contact} days</span></p>
                     </div>
 
                     <button className='btn'>Edit</button>
